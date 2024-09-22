@@ -20,7 +20,11 @@ nav {
     padding: 5px 50px;
     margin: auto;
 }
-
+@media (max-width:600px) {
+    .container {
+        padding: 5px 20px;
+    }
+}
 .nav_box {
     display: flex;
     align-items: center;
@@ -95,6 +99,19 @@ ul {
 font-size: 40px;
 font-weight: 600;
 text-align: center;
+}
+@media (max-width:1300px) {
+    .projects{
+        margin-top: 34px;
+    }
+    .projects_card_block{
+        margin-top: 30px;
+    }
+    .block_title{
+       font-size: 30px;
+       font-weight: 600;
+ 
+       }
 }
 .projects_card_block{
     width: 100%;
