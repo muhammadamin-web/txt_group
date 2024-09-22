@@ -107,6 +107,8 @@ flex-wrap: wrap;
     background-color: #fff;
     border-radius: 22px;
     width: 32.5%;
+    text-decoration: none;
+color: #000;
 }
 .projects_card_container{
     padding: 10px;
