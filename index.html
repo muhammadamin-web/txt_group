@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css">
+        <script defer src="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js"></script>
+
     </head>
     <body>
         <nav>
@@ -45,14 +48,26 @@
         </nav>
         <div class="banner">
             <div class="container">
-                <div class="banner_image">
-                    <img class="banner_img" src="./assets/images/banner1.jpg" alt="">
-                    <img class="banner_img" src="./assets/images/banner2.JPEG" alt="">
-                    <img class="banner_img" src="./assets/images/banner3.jpg" alt="">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <div style="height: 250px; background: #3f51b5;"></div>
+                            </div>
+                            <div class="slider__item">
+                                <div style="height: 250px; background: #607d8b;"></div>
+                            </div>
+                            <div class="slider__item">
+                                <div style="height: 250px; background: #f44336;"></div>
+                            </div>
+                            <div class="slider__item">
+                                <div style="height: 250px; background: #4caf50;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
         <div class="projects">
             <div class="container">
                 <h2 class="block_title">
@@ -143,11 +158,14 @@
                         </li>
                     </ul>
                     <p class="footer_text">
-                        © 2024 TXT Group. Barcha huquqlar himoyalangan. <br> Saytda nashr etilgan har qanday material kompaniya intellektual mulki hisoblanib, foydalanuvchilar bundan xabardor boʻlishi kerak.  Ushbu saytdagi rasm va renderlar majmua loyihasi, xonadonlar joylashuvi va hovli maydoni bilan yaqindan tanishish maqsadida yuklangan. Tayyor binolar dizayni va koʻrinishi saytdagi tasvirlardan farq qilishi mumkin. Shu sababli bu maʼlumotlar ommaviy oferta hisoblanmaydi.
+                        © 2024 TXT Group. Barcha huquqlar himoyalangan.
+                        <br>
+                        Saytda nashr etilgan har qanday material kompaniya intellektual mulki hisoblanib, foydalanuvchilar bundan xabardor boʻlishi kerak.  Ushbu saytdagi rasm va renderlar majmua loyihasi, xonadonlar joylashuvi va hovli maydoni bilan yaqindan tanishish maqsadida yuklangan. Tayyor binolar dizayni va koʻrinishi saytdagi tasvirlardan farq qilishi mumkin. Shu sababli bu maʼlumotlar ommaviy oferta hisoblanmaydi.
                     </p>
                 </div>
             </div>
         </footer>
         <script src="assets/js/script.js"></script>
+        <script src="path_to_simple_adaptive_slider.js"></script>
     </body>
 </html>
