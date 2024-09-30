@@ -52,15 +52,7 @@ nav {
     display: none;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    align-items: center;
-}
+
 
 .nav_links_a {
     font-family: "Montserrat", sans-serif;
@@ -93,72 +85,79 @@ ul {
     column-gap: 11px;
 }
 
-.banner{
+.banner {
     margin-top: 50px;
+}
+@media (max-width:600px) {
+    .banner {
+        margin-top: 30px;
+    }
 }
 /* Stil body uchun */
 
-  
-  /* Stil slider uchun */
-  .slider__wrapper {
+
+/* Slider konteyneri */
+.slider {
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
     overflow: hidden;
     position: relative;
-    width: 500px; /* Slider kengligi */
-    margin: 0 auto;
-  }
-  
-  .slider__items {
-    display: flex;
-    transition: transform 0.3s ease;
-    will-change: transform;
-  }
-  
-  .slider__item {
-    min-width: 500px; /* Har bir slayd kengligi */
-    position: relative;
-  }
-  
-  .slider__item>div::before {
-    content: counter(slide);
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
-  }
-  
-  /* Qo'shimcha elementlar uchun */
-  .slider__items {
-    counter-reset: slide;
-  }
-  
-  .slider__item {
-    counter-increment: slide;
-  }
-  
-  /* Slider nazoratchilari uchun */
-  .slider__control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    z-index: 10;
-  }
-  
-  .slider__control_prev {
-    left: 10px;
-  }
-  
-  .slider__control_next {
-    right: 10px;
-  }
-  
+    border-radius: 22px;
 
+}
+
+@media (max-width:700px) {
+    .slider {
+        height: 300px;
+    }
+}
+
+@media (max-width:600px) {
+    .slider {
+        height: 250px;
+    }
+}
+
+@media (max-width:500px) {
+    .slider {
+        height: 200px;
+    }
+}
+@media (max-width:360px) {
+    .slider {
+        height: 180px;
+    }
+}
+.slides-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Har bir slayd */
+.slide {
+    min-width: 100%;
+    /* Har bir slayd kengligi slayder kengligiga teng */
+    height: 100%;
+}
+
+.slide_img {
+    width: 100%;
+    /* Slayd kengligi bilan mos */
+    border-radius: 22px;
+    /* Slayd burchaklarini yumaloqlash */
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.no-animation {
+    transition: none !important;
+}
 
 
 
@@ -166,7 +165,12 @@ ul {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-
+@media (max-width:600px) {
+    .projects {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
 .projects_card_block {
     margin-top: 40px;
 }
@@ -210,10 +214,20 @@ ul {
     color: #000;
 }
 
+.projects_card_img_block {
+    border-radius: 22px;
+
+    overflow: hidden;
+
+}
+
+.projects_card:hover .projects_card_img {
+    transform: scale(1.1);
+}
+
 .projects_card_container {
     padding: 6px;
     padding-bottom: 12px;
-
 }
 
 @media (max-width:1300px) {
@@ -258,6 +272,8 @@ ul {
 .projects_card_img {
     border-radius: 20px;
     width: 100%;
+    transition: .3s all;
+
 }
 
 .card_text_block {
@@ -331,7 +347,25 @@ ul {
     flex-direction: column;
     gap: 20px;
 }
-.footer_text{
+
+.footer_list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    align-items: center;
+    padding: 0;
+}
+
+@media (max-width:450px) {
+    .footer_list {
+        gap: 10px;
+    }
+}
+
+.footer_text {
     text-align: center;
     color: #A1A6AF;
     font-size: 12px;
@@ -339,25 +373,37 @@ ul {
     font-weight: 400;
     width: 50%;
 }
-.footer_list{
-    margin-top: 25px;
+
+@media (max-width:1000px) {
+    .footer_text {
+        width: 70%;
+    }
 }
+
+@media (max-width:700px) {
+    .footer_text {
+        width: 90%;
+    }
+}
+
+@media (max-width:450px) {
+    .footer_text {
+        width: 100%;
+    }
+}
+
+
+
 .footer_link {
     text-decoration: none;
     color: #1D1D1F;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    
 }
 
-/* .footer_link::after {
-    content: "•";
-    margin-left: 10px;
-    color: #A1A6AF;
-    font-size: 10px;
+@media (max-width:450px) {
+    .footer_link {
+        font-size: 12px;
+    }
 }
-
-.footer_list li:last-child .footer_link::after {
-    content: "";
-} */
