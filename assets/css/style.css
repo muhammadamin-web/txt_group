@@ -270,10 +270,12 @@ nav {
 }
 
 .projects_card_img {
-    border-radius: 20px;
+    border-radius: 22px;
     width: 100%;
     transition: .3s all;
-
+/* height: ; */
+max-height: 220px;
+object-fit: cover;
 }
 
 .card_text_block {
