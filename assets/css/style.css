@@ -277,7 +277,16 @@ nav {
 max-height: 220px;
 object-fit: cover;
 }
-
+@media (max-width:800px) {
+    .projects_card_img {
+        border-radius: 22px;
+        width: 100%;
+        transition: .3s all;
+    /* height: ; */
+    max-height: 170px;
+    object-fit: cover;
+    }
+}
 .card_text_block {
     margin-top: 9px;
     display: flex;
