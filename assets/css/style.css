@@ -88,47 +88,32 @@ nav {
 .banner {
     margin-top: 50px;
 }
+
 @media (max-width:600px) {
     .banner {
         margin-top: 30px;
     }
 }
+
 /* Stil body uchun */
 
 
 /* Slider konteyneri */
 .slider {
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     margin: 0px auto;
     overflow: hidden;
     position: relative;
     border-radius: 22px;
-
-}
-
-@media (max-width:700px) {
-    .slider {
-        height: 300px;
-    }
 }
 
 @media (max-width:600px) {
     .slider {
-        height: 250px;
+        border-radius: 16px;
     }
 }
 
-@media (max-width:500px) {
-    .slider {
-        height: 200px;
-    }
-}
-@media (max-width:360px) {
-    .slider {
-        height: 180px;
-    }
-}
 .slides-container {
     width: 100%;
     height: 100%;
@@ -139,20 +124,25 @@ nav {
 /* Har bir slayd */
 .slide {
     min-width: 100%;
-    /* Har bir slayd kengligi slayder kengligiga teng */
     height: 100%;
 }
 
 .slide_img {
     width: 100%;
-    /* Slayd kengligi bilan mos */
     border-radius: 22px;
-    /* Slayd burchaklarini yumaloqlash */
-    height: 100%;
-    object-fit: cover;
+
 }
 
-
+@media (max-width:600px) {
+    .slide_img {
+        border-radius: 16px;
+    }
+}
+@media (max-width:500px) {
+    .slide_img {
+        border-radius: 8px;
+    }
+}
 
 
 .no-animation {
@@ -165,12 +155,14 @@ nav {
     margin-top: 30px;
     margin-bottom: 60px;
 }
+
 @media (max-width:600px) {
     .projects {
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
+
 .projects_card_block {
     margin-top: 40px;
 }
@@ -273,25 +265,27 @@ nav {
     border-radius: 22px;
     width: 100%;
     transition: .3s all;
-/* height: ; */
-max-height: 190px;
-object-fit: cover;
+    /* height: ; */
+    max-height: 190px;
+    object-fit: cover;
 }
+
 @media (max-width:800px) {
     .projects_card_img {
         border-radius: 22px;
         width: 100%;
         transition: .3s all;
-    /* height: ; */
-    max-height: 170px;
-    object-fit: cover;
+        /* height: ; */
+        max-height: 170px;
+        object-fit: cover;
     }
 }
+
 .card_text_block {
     margin-top: 9px;
     display: flex;
     justify-content: space-between;
-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .card_text_block {
@@ -302,7 +296,8 @@ flex-wrap: wrap;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 600;
-    margin: 0;width: 100%;
+    margin: 0;
+    width: 100%;
 }
 
 .card_price {
@@ -376,14 +371,17 @@ flex-wrap: wrap;
     .footer_list {
         gap: 10px;
     }
+
     .card_price {
         font-size: 11px;
 
     }
+
     .card_palace {
         font-size: 11px;
 
     }
+
     .card_count {
         font-family: "Inter", sans-serif;
         font-size: 11px;
@@ -436,6 +434,7 @@ flex-wrap: wrap;
         font-size: 12px;
     }
 }
+
 .nav_card_right {
     display: flex;
     flex-direction: row;
