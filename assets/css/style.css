@@ -318,7 +318,10 @@ border-radius: 22px;
     margin-top: 5px;
     color: #004F2E;
 }
-
+.pin_addres{
+    color: #004F2E;
+    width: 10px;
+}
 .card_count {
     font-family: "Inter", sans-serif;
     font-size: 12px;
@@ -333,6 +336,7 @@ border-radius: 22px;
     /* margin-top: 100px; */
     justify-self: flex-end;
     align-items: end;
+    flex-direction: column;
 }
 
 .card_palace {
@@ -381,7 +385,10 @@ border-radius: 22px;
     .footer_list {
         gap: 10px;
     }
-
+    .pin_addres{
+        color: #004F2E;
+        width: 8px;
+    }
     .card_price {
         font-size: 11px;
 
