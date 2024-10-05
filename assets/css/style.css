@@ -140,19 +140,13 @@ border-radius: 22px;
     margin: 0;
     border-radius: 22px;
 
-    /* object-fit: cover; */
 }
 
-/* @media (max-width:600px) {
-    .slide_img {
-        border-radius: 16px;
-    }
-}
 @media (max-width:500px) {
     .slide_img {
-        border-radius: 8px;
+        height: 170px !important;
     }
-} */
+}
 
 
 .no-animation {
