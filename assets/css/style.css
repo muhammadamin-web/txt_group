@@ -115,7 +115,7 @@ nav {
 
 @media (max-width:600px) {
     .slider {
-        border-radius: 16px;
+        border-radius: 22px;
     }
 }
 
@@ -145,7 +145,7 @@ nav {
     padding: 0;
     margin: 0;
     border-radius: 22px;
-
+    display: block;
 }
 
 @media (max-width:500px) {
@@ -153,6 +153,7 @@ nav {
         height: 170px !important;
     }
 }
+
 @media (max-width: 400px) {
     .slide_1 .slide_img {
         content: url('../images/projects/banner1_mobile.jpg');
