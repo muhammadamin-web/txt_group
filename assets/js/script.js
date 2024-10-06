@@ -5,6 +5,7 @@ let currentIndex = 0;
 function moveSlider() {
   currentIndex++;
   if (currentIndex >= totalSlides) {
+    window.innerWidth
     slidesContainer.style.transition = 'none'; // Animatsiyani olib tashlaymiz
     slidesContainer.style.transform = `translateX(0)`; // Birinchi slaydgacha qaytaramiz
     currentIndex = 1; // Yana keyingi slayddan boshlaymiz
