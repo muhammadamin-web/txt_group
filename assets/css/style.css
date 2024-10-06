@@ -111,6 +111,8 @@ nav {
     margin: 0px auto;
     overflow: hidden;
     position: relative;
+    border-radius: 22px;
+
 }
 
 @media (max-width:600px) {
