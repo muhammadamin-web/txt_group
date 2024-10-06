@@ -153,7 +153,19 @@ nav {
         height: 170px !important;
     }
 }
+@media (max-width: 400px) {
+    .slide_1 .slide_img {
+        content: url('../images/projects/banner1_mobile.jpg');
+        height: 170px !important;
 
+    }
+
+    .slide_2 .slide_img {
+        content: url('../images/projects/banner2_mobile.jpg');
+        height: 170px !important;
+
+    }
+}
 
 .no-animation {
     transition: none !important;
