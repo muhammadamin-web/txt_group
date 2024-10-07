@@ -241,7 +241,14 @@ nav {
     overflow: hidden;
 
 }
-
+.projects_card_img {
+    border-radius: 22px;
+    width: 100%;
+    transition: .3s all;
+    /* height: ; */
+    max-height: 300px;
+    object-fit: cover;
+}
 .projects_card:hover .projects_card_img {
     transform: scale(1.1);
 }
@@ -251,6 +258,11 @@ nav {
     padding-bottom: 12px;
 }
 
+@media (max-width:1500px) {
+.projects_card_img{
+max-height: 230px;
+}
+}
 @media (max-width:1300px) {
     .projects_card_block {
 
@@ -290,14 +302,7 @@ nav {
     }
 }
 
-.projects_card_img {
-    border-radius: 22px;
-    width: 100%;
-    transition: .3s all;
-    /* height: ; */
-    max-height: 300px;
-    object-fit: cover;
-}
+
 
 @media (max-width:800px) {
     .projects_card_img {
