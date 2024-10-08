@@ -263,6 +263,12 @@ nav {
 max-height: 230px;
 }
 }
+@media (min-width:1930px) {
+    .projects_card {
+
+        width: 23.5%;
+    }
+}
 @media (max-width:1300px) {
     .projects_card_block {
 
